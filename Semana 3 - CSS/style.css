@@ -1,0 +1,42 @@
+.navegacion {
+  height: 200px;
+  width: 1300px;
+  background-color: lightblue;
+  display: flex;
+}
+
+.lista_desordenada {
+  list-style: none;
+  margin-left: 900px;
+}
+
+.seccion {
+  height: 850px;
+  width: 1300px;
+  background-color: cadetblue;
+  margin-top: 20px;
+  display: flex;
+}
+
+.articulo {
+  flex: 2;
+  padding: 20px;
+}
+
+.aside {
+  flex: 1;
+  background-color: orange;
+  padding: 20px;
+}
+
+.div {
+  height: 200px;
+  width: 1300px;
+  background-color: yellow;
+}
+
+.footer {
+  height: 200px;
+  width: 1300px;
+  background-color: grey;
+}
