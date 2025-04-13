@@ -1,55 +1,133 @@
 <!DOCTYPE html>
 <html lang="es-ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+</head>
 
-  <body>
+<body>
     <header class="encabezado">
-      <nav class="navegacion">
-        <a class="navegacion__enlace" href="#presentacion">
-          <h2 class="navegacion__titulo">Informatorio</h2>
-        </a>
-        <ul class="enlaces">
-          <li class="enlaces__items">
-            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
-          </li>
-          <li class="enlaces__items">
-            <a class="enlaces__enlace" href="#sobre-mi">Sobre mí</a>
-          </li>
-          <li class="enlaces__items">
-            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="navegación">
+            <a class="navegación__enlace" href="#presentación">
+                <h2 class="navegación__título">Informatorio</h2>
+            </a>
+            <ul class="enlaces">
+                <li class="enlaces__item">
+                    <a class="enlaces_enlace" href="#presentación">Inicio</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#sobre-mí">Sobre mí</a>
+                </li>
+                <li class="enlaces__item">
+                    <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-
     <main class="principal">
-      <section class="presentacion" id="presentacion">
-        <div class="presentacion__contenedor_info">
-          <h1 class="presentacion__titulo">Futuro desarrollador.</h1>
-          <p class="presentacion__parrafo">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
-            aliquid quos soluta sint sunt consequatur nemo laborum pariatur
-            beatae, suscipit reiciendis delectus, quibusdam, asperiores optio.
-            Minima veritatis animi asperiores atque.
-          </p>
-        </div>
-        <div class="presentacion__contenedor_botones">
-            <a href="#sobre-mí" class="botón" role="button">Sobre mí</a>
-            <a href="./assets/docs/cv.pdf" target="_blank" class="botón_oscuro" role="button">Descargar CV</a>
-        </div>
-      </section>
+        <section class="presentación" id="presentación">
+            <div class="presentación__contenedor_info">
+                <h1 class="presentación__título">Soy desarrollador</h1>
+                <p class="presentación__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum mollitia impedit facere illo ipsum, id commodi ab corrupti vero sunt sit nam, nihil saepe fugiat, sint cumque incidunt laborum consequuntur?</p>
+                <div class="presentación__contenedor_botones">
+                    <a href="#sobre-mí" class="botón" role="button">Sobre mí</a>
+                    <a href="./assets/docs/cv.pdf" target="_blank" class="botón_oscuro" role="button">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+        <article class="artículo__sobre_mí">
+            <h2 class="artículo__título">Un poco sobre mí</h2>
+            <div class="artículo__contenedor_descripciones">
+                <section class="sección__descripción">
+                    <div class="sección__descripción_portaretrato">
+                        <img class="sección__descripción_imagen" src="./assets/images/trabajando-oficina.jpg" alt="foto trabajando en la oficina" title="Trabajando en la oficina">
+                    </div>
+                    <div class="sección__descripción_info scroll__info_gris" aria-label="descripción personal">
+                        <h3 class="sección__descripción_título" id="mi__historia_título">Mi historia</h3>
+                        <p class="sección__descripción_parrafo" aria-label="Detalles de mi historia" aria-describedby="mi__historia_título">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolorum, officia quam expedita modi doloremque quo ullam veritatis laboriosam delectus odio ducimus! Quae molestias qui porro placeat eligendi eos nemo!</p>
+                    </div>
+                </section>
+                <section class="seccion_descripcion">
+                    <div class="seccion_descripcion__info scroll scroll_fino scroll_gris" aria-label="descripcion personal">
+                      <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">Mis hobbies</h3>
+                      <p class="seccion_descripcion__parrafo" aria-label="Detalles de mis hobbies" aria-describedby="mis_hobbies_titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae alias maxime corrupti minima adipisci nihil ipsum porro, quisquam ad, necessitatibus repellat inventore laborum veniam tempore odit possimus quia aspernatur tempora.</p>
+                    </div>
+                    <div class="seccion_descripcion__porta_retrato">
+                      <img class="seccion_descripcion__image" src="./assets/images/reunión-trabajo.jpg" alt="foto mientras me encontraba en una reunion de trabajo" title="en una reunion"/>
+                    </div>
+                  </section>
+            </div>
+        </article>
+        <article class="artículo__proyectos" id="proyectos">
+            <h2 class="artículo__título">Mis proyectos</h2>
+            <div class="contenedor__tarjetas_grid">
+              <article class="tarjeta" aria-label="presentación de proyecto personal">
+                <img class="tarjeta__imagen" src="./assets/images/paisaje.jpg" alt="imagen del proyecto" title="proyecto 1"/>
+                <div class="tarjeta__contenido">
+                    <h3 class="tarjeta__título" id="título__proyecto_1">Título</h3>
+                    <span class="tarjeta__divisor"></span>
+                    <p class="tarjeta__párrafo scroll_fino" aria-label="descripción de proyecto personal" aria-describedby="título_proyecto_1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid ipsam quia incidunt voluptate labore aperiam odit? Dolor consequatur esse explicabo repellendus dolorum sapiente veniam libero illum, optio quasi error officia.</p>
+                    <a href="#link" class="botón_oscuro" target="_blank">Ver proyecto</a>
+                </div>
+            </div>
+        </article>
     </main>
-  </body>
+    <footer class="pie_de_página" role="contentinfo">
+        <div class="pie_de_página__columna">
+          <h4 class="pie_de_página__título_columna">Mis redes</h4>
+          <ul class="enlaces__redes">
+            <li class="enlaces__item">
+                <a class="enlaces__enlace_footer" href="https://github.com/juamqi" target="_blank">
+                    <img class="enlaces__icono" src="./assets/images/github-logo.png" alt="logo de github" title="github"/> 
+                </a>
+            </li>
+            <li class="enlaces__item">
+                <a class="enlaces__enlace_footer" href="https://www.instagram.com/juamqi" target="_blank">
+                    <img class="enlaces__icono" src="./assets/images/ig-logo.png" alt="logo de instagram" title="instagram"/>
+                </a>
+            </li>
+            <li class="enlaces__item">
+                <a class="enlaces__enlace_footer" href="https://x.com/juamqi" target="_blank">
+                    <img class="enlaces__icono" src="./assets/images/x-logo.png" alt="logo de X" title="X"/>
+                </a>
+            </li>
+          </ul>
+        </div>
+        <div class="pie_de_página__columna">
+          <h4 class="pie_de_página__título_columna">Contactame</h4>
+          <ul class="enlaces_vertical">
+            <li class="enlaces__item">
+              <a class="enlaces__enlace enlaces__enlace_footer" href="juampikass@gmail.com" target="_blank">Mail: juampikass@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="pie_de_página__columna" role="navigation">
+          <h4 class="pie_de_página__título_columna">Secciones</h4>
+          <ul class="enlaces_vertical">
+            <li class="enlaces__item">
+                <a class="enlaces__enlace_footer" href="#presentacion">Inicio</a>
+            </li>
+            <li class="enlaces__item">
+                <a class="enlaces__enlace_footer" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="enlaces__item">
+                <a class="enlaces__enlace_footer" href="#proyectos">Proyectos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="pie_de_página__copyright">
+            <p>©️Copyright 2024</p>
+        </div>
+    </footer>
+</body>
+
 </html>
